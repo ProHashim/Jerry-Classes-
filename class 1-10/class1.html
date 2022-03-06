@@ -5,6 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Class 1 / 10</title>
+    <style>
+      .hello-tab th,
+      .hello-tab td {
+        border: 1px solid black;
+        padding: 5px;
+      }
+
+      #hellooo th,
+      #hellooo td {
+        border: 10px solid maroon;
+        padding: 5px;
+      }
+
+      table {
+        border-collapse: collapse;
+      }
+    </style>
   </head>
   <body>
     <h2>Class 1 /10</h2>
@@ -81,8 +98,22 @@
       <li>Angel</li>
     </ol>
 
+    <!-- description list -->
+    <dl>
+      <!-- d title -->
+      <dt>Name</dt>
+      <!-- d data -->
+      <dd>Dave</dd>
+      <dt>Age</dt>
+      <dd>23</dd>
+      <dt>
+        <b>Address</b>
+      </dt>
+      <dd>cool address</dd>
+    </dl>
+
     <h3>Tables</h3>
-    <table>
+    <table class="hello-tab">
       <tr>
         <th>Name</th>
         <th>Age</th>
@@ -102,7 +133,7 @@
       </tr>
     </table>
 
-    <table>
+    <table id="hellooo">
       <!-- table heading -->
       <thead>
         <h2>Colors of differnt things</h2>
@@ -114,13 +145,35 @@
           <th>Color By Hex</th>
           <th>Color By RGB</th>
         </tr>
-
+      </thead>
+      <tbody>
         <tr>
           <td>Red</td>
           <td>#f00</td>
           <td>255,0,0</td>
         </tr>
+      </tbody>
+    </table>
+
+    <table onclick="myFun()">
+      <!-- table head -->
+      <thead>
+        <!-- table row -->
+        <tr>
+          <!-- table heading -->
+          <th>Name of student</th>
+          <th>FN of the student</th>
+        </tr>
       </thead>
+
+      <!-- table body -->
+      <tbody>
+        <tr>
+          <!-- table data -->
+          <td>Peter</td>
+          <td>Jhonson</td>
+        </tr>
+      </tbody>
     </table>
 
     <!-- Class and ID is your homework-->
@@ -128,5 +181,11 @@
     <p class="class-name"></p>
 
     <p id="id-name "></p>
+
+    <script>
+      function myFun() {
+        alert("Hello World");
+      }
+    </script>
   </body>
 </html>
