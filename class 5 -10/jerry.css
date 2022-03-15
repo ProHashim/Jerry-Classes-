@@ -1,0 +1,32 @@
+p {
+  /* color: #ff0000; */
+}
+
+.mydiv {
+  background-color: cyan;
+  width: 50%;
+  /* width: 50px; */
+  height: 100px;
+}
+p {
+  /* color by name */
+  color: maroon;
+  /* Colr by hex value */
+  /* color: #rrggbb */
+  color: #5d4c46;
+
+  /* color by rgb */
+  /* color: rgb(red, green, blue) */
+  /* color: rgb(255, 0, 0) */
+  color: rgb(100, 0, 100);
+  /* color: rgb(0, 0, 0); */
+  /* color: rgb(255, 255, 255); */
+  color: rgb(0, 0, 255);
+
+  /* Opacity */
+  color: rgba(0, 0, 255, 0.582);
+  /* color HSL */
+  /* color: hsl(hue, saturation, lightness) */
+  color: hsl(360, 42%, 40%);
+  color: hsla(360, 42%, 40%, 0.5);
+}
