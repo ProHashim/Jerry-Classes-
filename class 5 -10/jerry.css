@@ -7,13 +7,17 @@ p {
   width: 50%;
   /* width: 50px; */
   height: 100px;
+  margin: 100px;
+  border: 4px solid black;
+  padding: 20px;
+  outline: 6px solid red;
 }
 p {
   /* color by name */
   color: maroon;
   /* Colr by hex value */
   /* color: #rrggbb */
-  color: #5d4c46;
+  color: #2f231f;
 
   /* color by rgb */
   /* color: rgb(red, green, blue) */
@@ -29,4 +33,50 @@ p {
   /* color: hsl(hue, saturation, lightness) */
   color: hsl(360, 42%, 40%);
   color: hsla(360, 42%, 40%, 0.5);
+}
+
+/* h1 is a selector */
+
+/* tag selector */
+h1 {
+  color: blue;
+}
+
+/* class selector */
+.myclass {
+}
+
+/* id selector */
+
+#myid {
+}
+
+/* Different types of selector */
+
+/* descendent selector */
+.div h2 {
+}
+
+/* combinator selector */
+
+/* direct selector */
+
+div > p {
+  color: maroon;
+}
+
+h2,
+h3,
+h6,
+.red + .green,
+#id {
+  color: blue;
+}
+
+.div + p {
+  color: #2f231f;
+}
+
+div ~ p {
+  font-size: 20px;
 }
