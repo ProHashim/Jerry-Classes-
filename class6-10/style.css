@@ -8,6 +8,7 @@
   box-sizing: border-box;
 }
 
+/* tag selector */
 body {
   margin: 0;
   padding: 0;
@@ -17,6 +18,8 @@ body {
   font-kerning: normal;
   font-kerning: inherit; */
 }
+
+/* class selector */
 
 .box-container {
   width: 100vw;

@@ -6,3 +6,77 @@ h1 {
   position: relative;
   top: 10px;
 }
+/* Pseudo class */
+h1:hover {
+  color: red;
+}
+
+img {
+  max-width: 200px;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:visited {
+  /* color: yellow; */
+}
+
+a:focus {
+  border: 1px solid green;
+}
+
+.cool:hover,
+#cool3:hover,
+h1,
+h3,
+p,
+span {
+  color: red;
+}
+
+strong {
+  color: green;
+}
+
+.ele {
+  color: red;
+}
+
+p span:first-child,
+p strong:first-child {
+  font-size: 30px;
+}
+
+/* Pseudo Element */
+p::first-line {
+  color: blue;
+}
+
+a::after {
+  content: "!";
+}
+a::before {
+  content: "?";
+}
+/* ::first-letter can only be applied to block level elements so that is 
+why it wont work on a tag */
+a::first-letter {
+  font-size: 40px;
+}
+
+p::first-letter {
+  font-size: 40px;
+}
+
+/* float */
+img {
+  float: inherit;
+  float: left;
+  /* float: right; */
+  /* float: none; */
+  /* float: clear; */
+  /* display: inline-block; */
+  /* display: block; */
+}
