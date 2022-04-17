@@ -1,0 +1,63 @@
+section {
+  /* columns: 3; */
+  column-rule: 2px solid #000;
+}
+
+.mysection {
+  background-color: #d7d7d7;
+  max-width: 500px;
+  min-height: 500px;
+  position: relative;
+}
+
+/* direct selector */
+.mysection > button {
+  background-color: cyan;
+  border: none;
+  color: #000;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+
+  font-size: 16px;
+  /* margin: 4px 2px; */
+  cursor: pointer;
+  /* position: static; */
+  /* position: relative; */
+  /* position: absolute; */
+  /* position: fixed; */
+  /* position: sticky; */
+  /* top: 100px; */
+  right: 30px;
+  /* left: 100%; */
+  /* right: 50px; */
+
+  /* Display */
+  /* display: none; */
+  /* display: block; */
+  /* display: inline-block; */
+  margin-bottom: 30px;
+  /* margin-top: 40px; */
+  /* display: block; */
+  /* display: inline; */
+  /* display: inline; */
+  /* display: inline-block; */
+  /* width: 300px; */
+  /* height: 300px; */
+}
+.mydiv {
+  background-color: aqua;
+  max-width: 100px;
+  margin-top: 10px;
+  /* display: inline; */
+  display: inline-block;
+  width: 400px;
+  /* height: 400px; */
+}
+span {
+  margin-top: 40px;
+  margin-bottom: 60px;
+  display: inline-block;
+  background-color: aquamarine;
+  width: 500px;
+}

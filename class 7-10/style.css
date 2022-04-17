@@ -61,7 +61,7 @@ a::before {
   content: "?";
 }
 /* ::first-letter can only be applied to block level elements so that is 
-why it wont work on a tag */
+why it wont work on a inline tag */
 a::first-letter {
   font-size: 40px;
 }
