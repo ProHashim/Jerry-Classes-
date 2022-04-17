@@ -6,10 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Class 8 and 9 of 10</title>
     <link rel="stylesheet" href="style.css" />
+    <style>
+      div.background {
+        background: url(https://source.unsplash.com/random) no-repeat center;
+        background-size: cover;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        height: 400px;
+        width: 400px;
+      }
+
+      div.transbox {
+        background-color: rgba(255, 255, 255, 0.4);
+        -webkit-backdrop-filter: blur(5px);
+        -moz-backdrop-filter: blur(5px);
+        backdrop-filter: blur(10px);
+        padding: 20px;
+        margin: 30px;
+        width: 300px;
+        min-height: 300px;
+        font-weight: bold;
+      }
+    </style>
   </head>
   <body>
     <h1>Hello world</h1>
-    <section>
+    <!-- <section>
       <div>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
         excepturi eaque doloribus perspiciatis aut harum.
@@ -26,6 +49,26 @@
 
       <div class="mydiv">Mydiv</div>
       <div class="mydiv">Mydiv</div>
+    </section> -->
+    <!-- 
+    <section class="flex">
+      <div class="div">
+        Lorem ipsum dolor sit 1. Lorem ipsum dolor sit amet consectetur,
+        adipisicing elit. Fugit autem explicabo vitae eligendi, magni
+        distinctio, quidem saepe optio sapiente odit placeat molestiae iste?
+      </div>
+      <div class="div2">Lorem ipsum dolor sit 2.</div>
+      <div>Lorem ipsum dolor sit. 3</div>
+      <div>Lorem ipsum dolor sit. 4</div>
     </section>
+    <div class="div3">i have a background</div> -->
+
+    <h1>The backdrop-filter Property</h1>
+
+    <div class="background">
+      <div class="transbox">
+        <p>backdrop-filter: blur(5px)</p>
+      </div>
+    </div>
   </body>
 </html>

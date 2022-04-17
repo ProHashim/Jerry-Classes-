@@ -61,3 +61,61 @@ span {
   background-color: aquamarine;
   width: 500px;
 }
+
+.flex {
+  display: flex;
+  /* flex-direction: column; */
+  /* flex-direction: column-reverse; */
+  /* flex-direction: row-reverse; */
+  min-height: 100px;
+  /* max-width: 500px; */
+  background-color: #d7d7d7;
+
+  /* justify-content */
+  /* justify-content: center; */
+  /* justify-content: flex-end; */
+  /* justify-content: start; */
+  /* justify-content: space-around;
+  justify-content: space-between; */
+  /* justify-content will deal with horizontal alignment */
+  justify-content: center;
+
+  /* align items will deal with vertical alignment */
+  align-items: center;
+
+  /* align-content */
+  /* it align the lines */
+  align-content: space-between;
+
+  /* align-items: flex-end; */
+  flex-wrap: wrap;
+}
+.flex .div {
+  /* order: 2; */
+  background-color: aqua;
+  flex-basis: 500px;
+  /* flex-grow: 1; */
+}
+
+.div2 {
+  background-color: red;
+  flex-basis: 500px;
+  /* flex-grow: 1; */
+  /* flex-shrink: 2; */
+}
+/* prefixes */
+/* -webkit- */
+/* -moz- */
+/* -ms- */
+/* -o- */
+.div3 {
+  backdrop-filter: grayscale(1.5);
+
+  -webkit-backdrop-filter: blur(10px);
+  /* background-color: cadetblue; */
+  position: fixed;
+  min-height: 100px;
+  top: 10%;
+  display: flex;
+  -moz-box-flex: ;
+}
