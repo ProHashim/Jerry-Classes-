@@ -1,0 +1,76 @@
+.grid-container {
+  display: grid;
+  /* Support for MS and it is called prefix */
+  display: -ms-grid;
+  grid-template-columns: 250px 250px 250px 250px;
+  /* grid-template-columns: auto; */
+  grid-template-rows: 250px 250px 250px 250px;
+  /* gap: 30px; */
+  row-gap: 10px;
+  column-gap: 20px;
+}
+.grid-container div {
+  background-color: #d7d7d7;
+}
+.div1 {
+  grid-column: 1 / 3;
+  grid-row: 1 / 3;
+  background-color: chocolate !important;
+}
+
+/* Media Query / queries */
+
+/* Mobile Phone */
+/* 0 - 480px */
+
+/* @media rule */
+
+/* screen with 480px and smaller should have these properties */
+@media screen and (max-width: 480px) {
+  .grid-container {
+    grid-template-columns: auto;
+    /* grid-template-columns: auto; */
+    grid-template-rows: 250px 250px 250px 250px 250px;
+    /* gap: 30px; */
+    row-gap: 10px;
+    column-gap: 20px;
+  }
+  .div1 {
+    grid-column: auto;
+    grid-row: auto;
+    background-color: chocolate !important;
+  }
+}
+
+/* Landscape mode + tablets */
+/* 481 - 768px */
+/* min 481px and greater than 481px */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: auto;
+    /* grid-template-columns: auto; */
+    grid-template-rows: 250px 25px 25px 25px 25px;
+    /* gap: 30px; */
+    row-gap: 10px;
+    column-gap: 20px;
+  }
+  .div1 {
+    grid-column: auto;
+    grid-row: auto;
+    background-color: chocolate !important;
+  }
+}
+
+/* small laptops and larger tablets in landscape mode */
+/* 769 - 1260 */
+
+/* 1260+ */
+
+div {
+  color: green;
+  transition: all 0.5s ease;
+}
+
+div:hover {
+  color: red;
+}
